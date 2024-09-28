@@ -1,65 +1,54 @@
-# kmscript README
+# KMScript 语言支持
 
-This is the README for your extension "kmscript". After writing up a brief description, we recommend including the following sections.
+这个 Visual Studio Code 扩展为 KMScript 语言提供基本的语法支持。
 
-## Features
+## 功能描述
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+该扩展为 KMScript 文件（.km 扩展名）提供以下功能：
 
-For example if there is an image subfolder under your extension project workspace:
+- 语法高亮
+- 基本的语言配置（如注释、括号匹配等）
 
-\!\[feature X\]\(images/feature-x.png\)
+## 安装说明
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. 打开 Visual Studio Code
+2. 进入扩展视图（Ctrl+Shift+X）
+3. 搜索 "KMScript"
+4. 点击 "安装" 按钮
 
-## Requirements
+或者，您可以直接从 VSIX 文件安装：
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. 下载 .vsix 文件
+2. 在 VS Code 中，选择 "扩展" 视图
+3. 点击视图右上角的 "..." 按钮，选择 "从 VSIX 安装..."
+4. 选择下载的 .vsix 文件
 
-## Extension Settings
+## 使用方法
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+安装扩展后，VS Code 将自动识别 .km 文件为 KMScript 文件。打开任何 .km 文件，您就能看到语法高亮效果。
 
-For example:
+## 支持的 KMScript 语法特性
 
-This extension contributes the following settings:
+- 关键字高亮（如 if、then、else、while、for 等）
+- 函数名高亮（如 GetScreenResolution、FindPic、MoveTo 等）
+- 字符串识别
+- 注释识别（使用 // 作为行注释）
+- 数字识别
+- 操作符识别
+- 常量识别（如 PageDown、Enter、Esc 等）
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 已知问题
 
-## Known Issues
+- 目前功能还比较少，仅提供基本的语法高亮和语言配置。
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## 未来计划
 
-## Release Notes
+1. 完善代码片段（snippet）功能
+2. 实现代码格式化功能
+3. 为函数添加符号
+4. 为所有函数及关键词加入自动补全功能
+5. 为所有函数补充参数数量信息
 
-Users appreciate release notes as you update your extension.
+如果您有任何建议或遇到问题，请在我们的 GitHub 仓库中提出 issue。
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+感谢您使用 KMScript 语言支持扩展！

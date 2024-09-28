@@ -18,7 +18,7 @@
     }],
     "grammars": [{
       "language": "kmscript",
-      "scopeName": "",
+      "scopeName": "source.kmscript",
       "path": "./syntaxes/kmscript.tmLanguage.json"
     }]
   }
