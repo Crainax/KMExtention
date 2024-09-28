@@ -1,0 +1,25 @@
+{
+  "name": "kmscript",
+  "displayName": "KMScript Language Support",
+  "description": "KMScript language support for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "kmscript",
+      "aliases": ["KMScript", "kmscript"],
+      "extensions": [".km"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kmscript",
+      "scopeName": "",
+      "path": "./syntaxes/kmscript.tmLanguage.json"
+    }]
+  }
+}
