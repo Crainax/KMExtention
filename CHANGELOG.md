@@ -4,9 +4,22 @@ All notable changes to the "kmscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## [1.0.2] - 2024-03-XX
 
-- Initial release
+### 新增
+
+- 实现了初版代码格式化功能
+- 将格式化器集成到 VS Code 扩展中
+- 添加了使用快捷键触发格式化的功能
+
+### 已知问题
+
+- 当前的格式化功能还比较基础，可能无法处理所有复杂的代码结构
+
+### 未来计划
+
+- 改进格式化功能，使其能够处理更多的 KMScript 语法结构
+- 添加更多的格式化选项
 
 ## [0.0.1] - 2024-03-14
 
