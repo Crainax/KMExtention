@@ -14,8 +14,8 @@
         ["\"", "\""]
     ],
     "indentationRules": {
-        "increaseIndentPattern": "^\\s*(Sub|If|While|For)\\b.*$",
-        "decreaseIndentPattern": "^\\s*(End Sub|End If|Wend|Next)\\b.*$"
+        "increaseIndentPattern": "^\\s*(Sub|If|While|For(\\s+\\w+\\s*=\\s*\\w+\\s+to\\s+\\w+(?:\\s+Step\\s+\\w+)?)?)\\b.*$",
+        "decreaseIndentPattern": "^\\s*(End Sub|End If|EndIf|Wend|Next)\\b.*$"
     },
     "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)",
     "folding": {

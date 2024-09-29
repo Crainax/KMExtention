@@ -32,20 +32,20 @@
 			"patterns": [
 				{
 					"name": "keyword.control.kmscript",
-					"match": "(?i)\\b(if|then|else|end if|while|wend|for|next|sub|end sub|call|exit sub|break|dim)\\b"
+					"match": "(?i)\\b(if|then|else|elseif|else if|elif|end if|endif|while|wend|for|to|step|next|sub|end sub|call|exit sub|break|dim|and|or)\\b"
 				}
 			]
 		},
 		"strings": {
 			"name": "string.quoted.double.kmscript",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"match": "\\\\[\"\\\\]",
-					"name": "constant.character.escape.kmscript"
-				}
-			]
+				"begin": "\"",
+				"end": "\"",
+				"patterns": [
+					{
+						"match": "\\\\[\"\\\\]",
+						"name": "constant.character.escape.kmscript"
+					}
+				]
 		},
 		"comments": {
 			"name": "comment.line.double-slash.kmscript",
@@ -73,7 +73,7 @@
 		},
 		"operators": {
 			"name": "keyword.operator.kmscript",
-			"match": "(\\+|-|\\*|/|=|<|>|>=|<=|<>)"
+			"match": "(\\+|-|\\*|/|=|==|<|>|>=|=>|!<|<=|=<|!>|!=|<>|><)"
 		},
 		"constants": {
 			"patterns": [
