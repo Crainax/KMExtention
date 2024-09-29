@@ -1,25 +1,40 @@
 {
   "name": "kmscript",
-  "displayName": "KMScript Language Support",
-  "description": "KMScript language support for VSCode",
-  "version": "0.0.1",
+  "displayName": "Mohe Script KM File Language Support",
+  "description": "The Mohe Km File Scripting Language For VSCode",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.93.0"
+  },
+  "publisher": "Crainax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KMScript/KMScript.git"
   },
   "categories": [
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "kmscript",
-      "aliases": ["KMScript", "kmscript"],
-      "extensions": [".km"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "kmscript",
-      "scopeName": "source.kmscript",
-      "path": "./syntaxes/kmscript.tmLanguage.json"
-    }]
-  }
+    "languages": [
+      {
+        "id": "kmscript",
+        "aliases": [
+          "KMScript",
+          "kmscript"
+        ],
+        "extensions": [
+          ".km"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "kmscript",
+        "scopeName": "source.kmscript",
+        "path": "./syntaxes/kmscript.tmLanguage.json"
+      }
+    ]
+  },
+  "icon": "icon.png"
 }
