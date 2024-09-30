@@ -2,7 +2,7 @@
   "name": "kmscript",
   "displayName": "Mohe Script KM File Language Support",
   "description": "The Mohe Km File Scripting Language For VSCode",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "engines": {
     "vscode": "^1.93.0"
   },

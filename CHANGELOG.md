@@ -4,7 +4,7 @@ All notable changes to the "kmscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.0.8] - 2024-03-XX
+## [1.0.8] - 2024-09-29
 
 ### 修复
 
@@ -15,7 +15,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - 优化了操作符格式化的逻辑，现在可以正确处理包含注释的行
 - 改进了空格处理，避免出现多余的空格
 
-## [1.0.7] - 2024-03-XX
+## [1.0.7] - 2024-09-28
 
 ### 修复
 
@@ -27,7 +27,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - 优化了操作符格式化的逻辑，提高了代码的可读性和正确性
 - 改进了对注释行的处理，现在以 '//' 开头的行不会被格式化
 
-## [1.0.6] - 2024-03-XX
+## [1.0.6] - 2024-09-28
 
 ### 修复
 
@@ -39,13 +39,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - 添加了对算术操作符（+、-、*、/、%）的格式化支持
 - 优化了操作符格式化的逻辑，提高了代码的可读性和正确性
 
-## [1.0.5] - 2024-03-XX
+## [1.0.5] - 2024-09-28
 
 ### 改进
 
 - 优化了 'Else' 和 'ElseIf' 语句的缩进处理，使其与前面的 'If' 语句保持同级缩进
 
-## [1.0.4] - 2024-03-XX
+## [1.0.4] - 2024-09-28
 
 ### 修复
 
@@ -56,7 +56,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 - 优化了格式化器的逻辑，提高了代码的可读性和可维护性
 
-## [1.0.3] - 2024-03-XX
+## [1.0.3] - 2024-09-28
 
 ### 新增
 
@@ -83,7 +83,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - 实现函数和关键词的自动补全
 - 为函数添加参数数量信息
 
-## [1.0.2] - 2024-03-XX
+## [1.0.2] - 2024-09-28
 
 ### 新增
 
@@ -100,7 +100,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - 改进格式化功能，使其能够处理更多的 KMScript 语法结构
 - 添加更多的格式化选项
 
-## [0.0.1] - 2024-03-14
+## [0.0.1] - 2024-09-28
 
 ### 新增
 
