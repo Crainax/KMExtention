@@ -43,13 +43,9 @@
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test",
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
-    "test": "vscode-test",
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "vscode:prepublish": "echo 'No compilation needed'",
+    "compile": "echo 'No compilation needed'",
+    "watch": "echo 'No watch needed'"
   },
   "devDependencies": {
     "@types/vscode": "^1.93.0",
@@ -62,9 +58,7 @@
   "dependencies": {
     "vscode-languageclient": "^7.0.0",
     "vscode-languageserver": "^7.0.0",
-    "vscode-languageserver-textdocument": "^1.0.1"
-  },
-  "activationEvents": [
-    "onLanguage:kmscript"
-  ]
+    "vscode-languageserver-textdocument": "^1.0.1",
+    "concat-map": "0.0.1"
+  }
 }
