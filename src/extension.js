@@ -3,8 +3,15 @@ const { workspace, ExtensionContext } = vscode;
 const { LanguageClient, TransportKind } = require('vscode-languageclient/node');
 const path = require('path');
 
+// 添加日志
+console.log('扩展激活');
+
+// 使用 path.join 确保路径正确
+const formatterPath = path.join(__dirname, '..', 'kmscript-formatter', 'formatter.js');
+console.log('Formatter 路径:', formatterPath);
+
 // 导入格式化器
-const KMScriptFormatter = require('../kmscript-formatter/formatter');
+const KMScriptFormatter = require(formatterPath);
 
 // 创建格式化器实例
 const formatter = new KMScriptFormatter();
@@ -14,6 +21,7 @@ const formatter = new KMScriptFormatter();
  * @param {ExtensionContext} context 扩展上下文
  */
 async function activate(context) {
+    console.log('KMScript 扩展已激活');
     // 注册文档格式化提供程序
     const formattingProvider = vscode.languages.registerDocumentFormattingEditProvider('kmscript', {
         provideDocumentFormattingEdits(document) {
