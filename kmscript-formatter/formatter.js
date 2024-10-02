@@ -1,3 +1,5 @@
+const { Console } = require("console");
+
 class KMScriptFormatter {
     constructor(options = {}) {
         this.indentSize = options.indentSize || 4;

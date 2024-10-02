@@ -4,6 +4,19 @@ All notable changes to the "kmscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.9] - 2024-10-02
+
+### 改进
+
+- 优化了文档符号提供功能，现在可以更准确地识别子程序（Sub）
+- 修改了正则表达式以更精确地匹配 Sub 声明，避免误识别其他行为符号
+- 改进了服务器端的日志记录，便于调试和问题排查
+
+### 修复
+
+- 解决了无法正确处理文档打开和更改事件的问题
+- 修复了找不到文档的错误
+
 ## [1.0.8] - 2024-09-29
 
 ### 修复
