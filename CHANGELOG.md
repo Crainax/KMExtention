@@ -4,6 +4,18 @@ All notable changes to the "kmscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.1] - 2024-10-05
+
+### 新增
+
+- 添加了对 .kms 文件扩展名的支持
+- 新增了自定义命令 "Format KMScript" 用于格式化
+
+### 改进
+
+- 更新了扩展的描述信息
+- 优化了package.json中的配置
+
 ## [1.0.9] - 2024-10-02
 
 ### 改进

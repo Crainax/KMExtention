@@ -2,9 +2,9 @@
   "name": "kmscript",
   "displayName": "Mohe Script KM File Language Support",
   "description": "The Mohe Km File Scripting Language For VSCode",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "engines": {
-    "vscode": "^1.93.0"
+    "vscode": "^1.49.0"
   },
   "publisher": "Crainax",
   "repository": {
@@ -38,6 +38,9 @@
       }
     ]
   },
+  "activationEvents": [
+    "onLanguage:kmscript"
+  ],
   "icon": "icon.png",
   "scripts": {
     "lint": "eslint .",
@@ -48,7 +51,7 @@
     "watch": "echo 'No watch needed'"
   },
   "devDependencies": {
-    "@types/vscode": "^1.93.0",
+    "@types/vscode": "^1.49.0",
     "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
     "eslint": "^9.9.1",
