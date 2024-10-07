@@ -4,6 +4,19 @@ All notable changes to the "kmscript" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.2.0] - 2024-10-06
+
+### 新增
+
+- 实现了函数定义跳转功能
+- 添加了函数调用的悬停提示
+- 优化了文档符号提供功能，提高了子程序（Sub）的识别准确性
+
+### 改进
+
+- 改进了服务器端的日志记录，便于调试和问题排查
+- 优化了语义分析器的性能
+
 ## [1.1.1] - 2024-10-05
 
 ### 新增

@@ -67,7 +67,7 @@ async function activate(context) {
     const clientOptions = {
         documentSelector: [{ scheme: 'file', language: 'kmscript' }],
         synchronize: {
-            fileEvents: workspace.createFileSystemWatcher('**/*.kms')
+            fileEvents: workspace.createFileSystemWatcher('**/*.{km,kms}')
         }
     };
 
@@ -80,10 +80,45 @@ async function activate(context) {
     );
 
     // 启动客户端
-    client.start();
+    await client.start();
+
+    // 注册"转到定义"命令
+    const goToDefinitionCommand = vscode.commands.registerCommand('kmscript.goToDefinition', async () => {
+        const activeEditor = vscode.window.activeTextEditor;
+        if (!activeEditor) {
+            return;
+        }
+
+        const position = activeEditor.selection.active;
+        const definitions = await vscode.commands.executeCommand(
+            'vscode.executeDefinitionProvider',
+            activeEditor.document.uri,
+            position
+        );
+
+        if (definitions && definitions.length > 0) {
+            vscode.window.showTextDocument(definitions[0].uri, {
+                selection: definitions[0].range
+            });
+        }
+    });
+
+    // 注册 Alt+Click 处理
+    const altClickHandler = vscode.commands.registerCommand('kmscript.altClick', async (uri, position) => {
+        const document = await vscode.workspace.openTextDocument(uri);
+        const editor = await vscode.window.showTextDocument(document);
+        editor.selection = new vscode.Selection(position, position);
+        vscode.commands.executeCommand('kmscript.goToDefinition');
+    });
 
     // 将所有注册的功能添加到订阅列表中
-    context.subscriptions.push(formatCommand, formattingProvider, client);
+    context.subscriptions.push(
+        formatCommand,
+        formattingProvider,
+        client,
+        goToDefinitionCommand,
+        altClickHandler
+    );
 }
 
 /**

@@ -2,7 +2,7 @@
   "name": "kmscript",
   "displayName": "Mohe Script KM File Language Support",
   "description": "The Mohe Km File Scripting Language For VSCode",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "engines": {
     "vscode": "^1.49.0"
   },
@@ -19,8 +19,14 @@
     "languages": [
       {
         "id": "kmscript",
-        "extensions": [".km", ".kms"],
-        "aliases": ["KMScript", "kmscript"],
+        "extensions": [
+          ".km",
+          ".kms"
+        ],
+        "aliases": [
+          "KMScript",
+          "kmscript"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -35,6 +41,17 @@
       {
         "command": "kmscript.format",
         "title": "Format KMScript"
+      },
+      {
+        "command": "kmscript.goToDefinition",
+        "title": "Go to Definition"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "kmscript.altClick",
+        "key": "alt+click",
+        "when": "editorTextFocus && editorLangId == kmscript"
       }
     ]
   },
